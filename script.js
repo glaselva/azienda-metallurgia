@@ -1,5 +1,5 @@
 // ==========================================
-// ANTONICELLI METALMECCANICA - JAVASCRIPT
+// AZIENDA METALMECCANICA - JAVASCRIPT
 // ==========================================
 
 // === NAVBAR FUNCTIONALITY ===
@@ -350,6 +350,6 @@ const preventOrphans = () => {
 preventOrphans();
 
 // === CONSOLE LOG (remove in production) ===
-console.log('%cAntonicelli Metalmeccanica', 'font-size: 20px; font-weight: bold; color: #e74c3c;');
+console.log('%Azienda Metalmeccanica', 'font-size: 20px; font-weight: bold; color: #e74c3c;');
 console.log('%cDeveloped by TableHero', 'font-size: 12px; color: #7f8c8d;');
 console.log('🔧 Artigiani 4.0 dal 1968');
