@@ -11,6 +11,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-banner-content">
+            <div class="cookie-banner-text">
+                <p>
+                    🍪 Questo sito utilizza solo <strong>cookie tecnici essenziali</strong> per garantire il corretto funzionamento.
+                    Non utilizziamo cookie di profilazione.
+                    Per maggiori informazioni, consulta la nostra <a href="privacy.html">Privacy Policy</a>.
+                </p>
+            </div>
+            <div class="cookie-banner-buttons">
+                <button id="acceptCookies" class="btn btn-primary">Accetta</button>
+                <button id="declineCookies" class="btn btn-secondary">Rifiuta</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
@@ -26,7 +43,7 @@
                     <a href="index.html" class="nav-link active">Home</a>
                     <a href="azienda.html" class="nav-link">Azienda</a>
                     <a href="settori.html" class="nav-link">Settori</a>
-                    <a href="case-studies.html" class="nav-link">Case Study</a>
+                    <a href="case-studies.html" class="nav-link">Case of Studies</a>
                     <a href="contatti.html" class="nav-link">Contatti</a>
                 </div>
             </div>
@@ -52,6 +69,7 @@
                         <span class="contact-text">LinkedIn</span>
                     </a>
                 </div>
+                <a href="contatti.html" class="btn btn-primary nav-cta">Richiedi Preventivo</a>
             </div>
 
             <button class="hamburger" id="hamburger">
@@ -68,7 +86,7 @@
         <div class="container hero-content">
             <div class="hero-text">
                 <span class="hero-label">Artigiani 4.0</span>
-                <h1 class="hero-title">50 anni di passione ed eccellenza metalmeccanica</h1>
+                <h1 class="hero-title">Oltre 50 anni di passione ed eccellenza metalmeccanica</h1>
                 <p class="hero-subtitle">Dalla tradizione artigiana all'innovazione tecnologica: realizziamo componenti e strutture metalliche di precisione per edilizia, industria e progetti su misura.</p>
                 <div class="hero-cta">
                     <a href="contatti.html" class="btn btn-primary btn-lg">Richiedi un Preventivo</a>
@@ -117,71 +135,8 @@
                 <p class="section-description">Dalla progettazione alla realizzazione, affianchiamo i nostri clienti in 5 settori strategici</p>
             </div>
 
-            <div class="settori-grid">
-                <div class="settore-card">
-                    <div class="settore-image">
-                        <img src="img/ediliziaArredamento.jpg" alt="Edilizia e Arredamento">
-                        <div class="settore-overlay">
-                            <a href="settore-edilizia.html" class="btn btn-white">Scopri di più</a>
-                        </div>
-                    </div>
-                    <div class="settore-content">
-                        <h3>Edilizia e Arredamento</h3>
-                        <p>Strutture metalliche per abitazioni di carattere e design che uniscono estetica e funzionalità</p>
-                    </div>
-                </div>
-
-                <div class="settore-card">
-                    <div class="settore-image">
-                        <img src="img/industriale.jpg" alt="Settore Industriale">
-                        <div class="settore-overlay">
-                            <a href="settore-industriale.html" class="btn btn-white">Scopri di più</a>
-                        </div>
-                    </div>
-                    <div class="settore-content">
-                        <h3>Settore Industriale</h3>
-                        <p>Componenti di precisione per processi produttivi con standard qualitativi certificati</p>
-                    </div>
-                </div>
-
-                <div class="settore-card">
-                    <div class="settore-image">
-                        <img src="img/agricolo.jpg" alt="Settore Agricolo">
-                        <div class="settore-overlay">
-                            <a href="settore-agricolo.html" class="btn btn-white">Scopri di più</a>
-                        </div>
-                    </div>
-                    <div class="settore-content">
-                        <h3>Settore Agricolo</h3>
-                        <p>Ricambi e componenti per macchine agricole garantendo affidabilità e lunga durata</p>
-                    </div>
-                </div>
-
-                <div class="settore-card">
-                    <div class="settore-image">
-                        <img src="img/lavoroTerzi.jpg" alt="Lavorazioni Conto Terzi">
-                        <div class="settore-overlay">
-                            <a href="settore-conto-terzi.html" class="btn btn-white">Scopri di più</a>
-                        </div>
-                    </div>
-                    <div class="settore-content">
-                        <h3>Lavorazioni Conto Terzi</h3>
-                        <p>Dalla progettazione alla realizzazione, trasformiamo le tue idee in prodotti concreti</p>
-                    </div>
-                </div>
-
-                <div class="settore-card">
-                    <div class="settore-image">
-                        <img src="img/forniture.jpg" alt="Forniture">
-                        <div class="settore-overlay">
-                            <a href="settore-forniture.html" class="btn btn-white">Scopri di più</a>
-                        </div>
-                    </div>
-                    <div class="settore-content">
-                        <h3>Forniture</h3>
-                        <p>Ampio assortimento di materiali metallici con consegne rapide e assistenza dedicata</p>
-                    </div>
-                </div>
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="settori.html" class="btn btn-primary btn-lg">Scopri tutti i nostri settori</a>
             </div>
         </div>
     </section>
@@ -229,7 +184,7 @@
                 <div class="processo-detail" data-detail="1">
                     <div class="detail-card">
                         <div class="detail-image">
-                            <img src="https://via.placeholder.com/400x250/e74c3c/ffffff?text=Analisi+Esigenze" alt="Analisi Esigenze">
+                        <img src="img/6punti/analisiesigenze.jpg" alt="Analisi Esigenze">
                         </div>
                         <div class="detail-content">
                             <h3>Analisi Esigenze</h3>
@@ -240,7 +195,7 @@
                 <div class="processo-detail" data-detail="2">
                     <div class="detail-card">
                         <div class="detail-image">
-                            <img src="https://via.placeholder.com/400x250/3498db/ffffff?text=Selezione+Materiali" alt="Selezione Materiali">
+                            <img src="img/6punti/selezionemateriali.jpg" alt="Selezione Materiali">
                         </div>
                         <div class="detail-content">
                             <h3>Selezione Materiali</h3>
@@ -251,7 +206,7 @@
                 <div class="processo-detail" data-detail="3">
                     <div class="detail-card">
                         <div class="detail-image">
-                            <img src="https://via.placeholder.com/400x250/2ecc71/ffffff?text=Sviluppo+Tecnico" alt="Sviluppo Tecnico">
+                            <img src="img/6punti/sviluppotecnico.jpg" alt="Sviluppo Tecnico">
                         </div>
                         <div class="detail-content">
                             <h3>Sviluppo Tecnico</h3>
@@ -262,7 +217,7 @@
                 <div class="processo-detail" data-detail="4">
                     <div class="detail-card">
                         <div class="detail-image">
-                            <img src="https://via.placeholder.com/400x250/f39c12/ffffff?text=Ordine+Materiali" alt="Ordine Materiali">
+                            <img src="img/6punti/ordinemateriali.jpg" alt="Ordine Materiali">
                         </div>
                         <div class="detail-content">
                             <h3>Ordine Materiali</h3>
@@ -273,7 +228,7 @@
                 <div class="processo-detail" data-detail="5">
                     <div class="detail-card">
                         <div class="detail-image">
-                            <img src="https://via.placeholder.com/400x250/9b59b6/ffffff?text=Lavorazione" alt="Lavorazione">
+                            <img src="img/6punti/lavorazione.jpg" alt="Lavorazione">
                         </div>
                         <div class="detail-content">
                             <h3>Lavorazione</h3>
@@ -284,7 +239,7 @@
                 <div class="processo-detail" data-detail="6">
                     <div class="detail-card">
                         <div class="detail-image">
-                            <img src="https://via.placeholder.com/400x250/e67e22/ffffff?text=Imballaggio+%26+Consegna" alt="Imballaggio & Consegna">
+                            <img src="img/6punti/imballaggioconsegna.jpg" alt="Imballaggio & Consegna">
                         </div>
                         <div class="detail-content">
                             <h3>Imballaggio & Consegna</h3>
@@ -305,46 +260,41 @@
                 <p class="section-description">Dai progetti artistici alle soluzioni industriali: ogni lavoro racconta la nostra passione</p>
             </div>
 
-            <div class="case-studies-grid">
-                <div class="case-study-card featured">
-                    <div class="case-image">
-                        <img src="https://via.placeholder.com/800x600/8e44ad/ffffff?text=Supper+Segreta+x+Tormaresca" alt="Supper Segreta x Tormaresca">
-                    </div>
-                    <div class="case-content">
-                        <span class="case-category">Arte & Design</span>
-                        <h3>Supper Segreta x Tormaresca</h3>
-                        <p>Supporti espositivi innovativi per l'evento che unisce arte culinaria ed esperienza visiva</p>
-                        <a href="case-studies.html#supper-segreta" class="case-link">Leggi il caso studio →</a>
-                    </div>
-                </div>
-
-                <div class="case-study-card">
-                    <div class="case-image">
-                        <img src="https://via.placeholder.com/600x400/2980b9/ffffff?text=Palazzo+Romanazzi" alt="Palazzo Romanazzi">
-                    </div>
-                    <div class="case-content">
-                        <span class="case-category">Edilizia</span>
-                        <h3>Palazzo Romanazzi - L'archivio</h3>
-                        <p>Strutture metalliche per un progetto di restauro conservativo di alto profilo</p>
-                        <a href="case-studies.html#palazzo-romanazzi" class="case-link">Leggi il caso studio →</a>
-                    </div>
-                </div>
-
-                <div class="case-study-card">
-                    <div class="case-image">
-                        <img src="https://via.placeholder.com/600x400/27ae60/ffffff?text=Refugium+Peccatorum" alt="Refugium Peccatorum">
-                    </div>
-                    <div class="case-content">
-                        <span class="case-category">Arte Contemporanea</span>
-                        <h3>Refugium Peccatorum</h3>
-                        <p>Installazione artistica in collaborazione con Pierluca Cetera e Maurizio di Feo</p>
-                        <a href="case-studies.html#refugium-peccatorum" class="case-link">Leggi il caso studio →</a>
-                    </div>
-                </div>
-            </div>
-
             <div class="text-center" style="margin-top: 3rem;">
                 <a href="case-studies.html" class="btn btn-primary btn-lg">Vedi tutti i progetti</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clienti Section -->
+    <section class="clienti section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">I nostri clienti</h2>
+            </div>
+
+            <div class="clienti-grid">
+                <div class="cliente-item">
+                    <img src="https://via.placeholder.com/120x60/cccccc/000000?text=Cliente+1" alt="Cliente 1">
+                </div>
+                <div class="cliente-item">
+                    <img src="https://via.placeholder.com/120x60/cccccc/000000?text=Cliente+2" alt="Cliente 2">
+                </div>
+                <div class="cliente-item">
+                    <img src="https://via.placeholder.com/120x60/cccccc/000000?text=Cliente+3" alt="Cliente 3">
+                </div>
+                <div class="cliente-item">
+                    <img src="https://via.placeholder.com/120x60/cccccc/000000?text=Cliente+4" alt="Cliente 4">
+                </div>
+                <div class="cliente-item">
+                    <img src="https://via.placeholder.com/120x60/cccccc/000000?text=Cliente+5" alt="Cliente 5">
+                </div>
+                <div class="cliente-item">
+                    <img src="https://via.placeholder.com/120x60/cccccc/000000?text=Cliente+6" alt="Cliente 6">
+                </div>
+                <div class="cliente-item">
+                    <img src="https://via.placeholder.com/120x60/cccccc/000000?text=Cliente+7" alt="Cliente 7">
+                </div>
             </div>
         </div>
     </section>
@@ -356,8 +306,8 @@
                 <h2>Hai un progetto in mente?</h2>
                 <p>Contattaci per una consulenza gratuita e trasformiamo insieme le tue idee in realtà</p>
                 <div class="cta-buttons">
-                    <a href="contatti.html" class="btn btn-white btn-lg">Richiedi Preventivo</a>
-                    <a href="tel:+390000000000" class="btn btn-outline-white btn-lg">Chiamaci Ora</a>
+                    <a href="contatti.html" class="btn btn-primary btn-lg">Contattaci</a>
+                    <a href="settori.html" class="btn btn-white btn-lg">Scopri i Settori</a>
                 </div>
             </div>
         </div>
@@ -386,19 +336,16 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="azienda.html">Azienda</a></li>
                         <li><a href="settori.html">Settori</a></li>
-                        <li><a href="case-studies.html">Case Study</a></li>
+                        <li><a href="case-studies.html">Case of Studies</a></li>
                         <li><a href="contatti.html">Contatti</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col">
-                    <h4>Settori</h4>
+                    <h4>Informazioni Legali</h4>
                     <ul class="footer-links">
-                        <li><a href="settori.html#edilizia">Edilizia e Arredamento</a></li>
-                        <li><a href="settori.html#industriale">Settore Industriale</a></li>
-                        <li><a href="settore-agricolo.html">Settore Agricolo</a></li>
-                        <li><a href="settore-conto-terzi.html">Lavorazioni Conto Terzi</a></li>
-                        <li><a href="settori.html#forniture">Forniture</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="privacy.html#cookie">Cookie Policy</a></li>
                     </ul>
                 </div>
 
@@ -436,7 +383,7 @@
 
             <div class="footer-bottom">
                 <p>&copy; 2026 Azienda Metalmeccanica. Tutti i diritti riservati.</p>
-                <p>Developed by <a href="#" style="color: #00848A;">Giuseppe La Selva</a></p>
+                <p>Developed by <a href="https://glaselva.github.io/portfolio/" target="_blank" style="color: #00848A;">Giuseppe La Selva</a></p>
             </div>
         </div>
     </footer>

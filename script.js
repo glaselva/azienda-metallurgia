@@ -353,3 +353,57 @@ preventOrphans();
 console.log('%Azienda Metalmeccanica', 'font-size: 20px; font-weight: bold; color: #e74c3c;');
 console.log('%cDeveloped by TableHero', 'font-size: 12px; color: #7f8c8d;');
 console.log('🔧 Artigiani 4.0 dal 1968');
+
+// === COOKIE CONSENT MANAGEMENT ===
+// Cookie Banner
+document.addEventListener('DOMContentLoaded', function() {
+    const cookieBanner = document.getElementById('cookieBanner');
+    const acceptBtn = document.getElementById('acceptCookies');
+    const declineBtn = document.getElementById('declineCookies');
+
+    console.log('Cookie banner element:', cookieBanner);
+
+    if (!cookieBanner) {
+        console.error('Cookie banner element not found!');
+        return;
+    }
+
+    // Check if user already made a choice
+    const cookieConsent = localStorage.getItem('cookieConsent');
+    console.log('Cookie consent status:', cookieConsent);
+
+    if (!cookieConsent) {
+        console.log('No cookie consent found, showing banner in 1 second');
+        // Show banner after 1 second
+        setTimeout(() => {
+            console.log('Adding show class to banner');
+            cookieBanner.classList.add('show');
+        }, 1000);
+    } else {
+        console.log('Cookie consent already given:', cookieConsent);
+    }
+
+    // Accept cookies
+    if (acceptBtn) {
+        acceptBtn.addEventListener('click', function() {
+            console.log('Accept button clicked');
+            localStorage.setItem('cookieConsent', 'accepted');
+            cookieBanner.classList.remove('show');
+            console.log('Cookies accepted');
+        });
+    } else {
+        console.error('Accept button not found!');
+    }
+
+    // Decline cookies
+    if (declineBtn) {
+        declineBtn.addEventListener('click', function() {
+            console.log('Decline button clicked');
+            localStorage.setItem('cookieConsent', 'declined');
+            cookieBanner.classList.remove('show');
+            console.log('Cookies declined');
+        });
+    } else {
+        console.error('Decline button not found!');
+    }
+});

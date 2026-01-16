@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contatta Azienda Metalmeccanica per preventivi, informazioni e consulenze. Siamo a Gioia del Colle (BA).">
+    <title>Contatti | Azienda Metalmeccanica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contatti.css">
+</head>
+<body>
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-banner-content">
+            <div class="cookie-banner-text">
+                <p>
+                    🍪 Questo sito utilizza solo <strong>cookie tecnici essenziali</strong> per garantire il corretto funzionamento.
+                    Non utilizziamo cookie di profilazione.
+                    Per maggiori informazioni, consulta la nostra <a href="privacy.html">Privacy Policy</a>.
+                </p>
+            </div>
+            <div class="cookie-banner-buttons">
+                <button id="acceptCookies" class="btn btn-primary">Accetta</button>
+                <button id="declineCookies" class="btn btn-secondary">Rifiuta</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <span class="logo-text">AZIENDA</span>
+                    <span class="logo-subtitle">Metalmeccanica</span>
+                </a>
+            </div>
+
+            <div class="nav-center">
+                <div class="nav-menu" id="navMenu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="azienda.html" class="nav-link">Azienda</a>
+                    <a href="settori.html" class="nav-link">Settori</a>
+                    <a href="case-studies.html" class="nav-link">Case of Studies</a>
+                    <a href="contatti.html" class="nav-link active">Contatti</a>
+                </div>
+            </div>
+
+            <div class="nav-right">
+                <div class="nav-contacts">
+                    <a href="tel:+390803481234" class="nav-contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <span class="contact-text">080 348 1234</span>
+                    </a>
+                    <a href="https://wa.me/393471234567" target="_blank" class="nav-contact-item whatsapp">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="white">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        <span class="contact-text">WhatsApp</span>
+                    </a>
+                    <a href="https://www.linkedin.com/company/azienda-metalmeccanica" target="_blank" class="nav-contact-item linkedin">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        <span class="contact-text">LinkedIn</span>
+                    </a>
+                </div>
+                <a href="#contatto" class="btn btn-primary nav-cta">Scrivici</a>
+            </div>
+
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="hero-label">Parliamo del tuo progetto</span>
+                <h1 class="hero-title">Contattaci</h1>
+                <p class="hero-subtitle">Siamo a tua disposizione per preventivi, consulenze tecniche e informazioni sui nostri servizi. Rispondiamo entro 24 ore.</p>
+                <div class="hero-cta">
+                    <button onclick="window.location.href='tel:+390803481234'" class="btn btn-primary btn-lg">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        Chiamaci
+                    </button>
+                    <a href="#contatto" class="btn btn-secondary btn-lg">Invia una Richiesta</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Contatti -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Come raggiungerci</span>
+                <h2>I nostri contatti</h2>
+                <p>Siamo a Gioia del Colle (BA), facilmente raggiungibili dalla SS100 e dalle principali arterie stradali pugliesi</p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Telefono -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                    </div>
+                    <h3>Telefono</h3>
+                    <p><a href="tel:+390803481234" style="color: var(--primary-color); font-weight: 600;">080 348 1234</a></p>
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 0.5rem;">Lun-Ven: 8:00 - 18:00<br>Sab: 8:00 - 13:00</p>
+                </div>
+
+                <!-- Email -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@aziendametalmeccanica.it" style="color: var(--primary-color); font-weight: 600;">info@aziendametalmeccanica.it</a></p>
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 0.5rem;">Risposta entro 24h</p>
+                </div>
+
+                <!-- WhatsApp -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor" style="stroke: none;">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p><a href="https://wa.me/393471234567" target="_blank" style="color: var(--primary-color); font-weight: 600;">+39 347 123 4567</a></p>
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 0.5rem;">Chat veloce per info rapide</p>
+                </div>
+
+                <!-- Indirizzo -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3>Sede Operativa</h3>
+                    <p style="color: var(--text-dark); font-weight: 600;">Via Esempio, 123</p>
+                    <p style="font-size: 0.9rem; color: var(--text-light);">70023 Gioia del Colle (BA)</p>
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 0.5rem;">P.IVA 12345678901</p>
+                </div>
+
+                <!-- Orari -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Orari di Apertura</h3>
+                    <p style="color: var(--text-dark); font-weight: 600;">Lun - Ven</p>
+                    <p style="font-size: 0.9rem; color: var(--text-light);">8:00 - 13:00 / 14:30 - 18:00</p>
+                    <p style="color: var(--text-dark); font-weight: 600; margin-top: 1rem;">Sabato</p>
+                    <p style="font-size: 0.9rem; color: var(--text-light);">8:00 - 13:00</p>
+                </div>
+
+                <!-- Social -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="18" cy="5" r="3"></circle>
+                            <circle cx="6" cy="12" r="3"></circle>
+                            <circle cx="18" cy="19" r="3"></circle>
+                            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                        </svg>
+                    </div>
+                    <h3>Social Media</h3>
+                    <p>
+                        <a href="https://www.linkedin.com/company/azienda-metalmeccanica" target="_blank" style="color: var(--primary-color); font-weight: 600; display: block; margin-bottom: 0.5rem;">LinkedIn</a>
+                        <a href="https://www.facebook.com/aziendametalmeccanica" target="_blank" style="color: var(--primary-color); font-weight: 600; display: block; margin-bottom: 0.5rem;">Facebook</a>
+                        <a href="https://www.instagram.com/aziendametalmeccanica" target="_blank" style="color: var(--primary-color); font-weight: 600; display: block;">Instagram</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Contatto -->
+    <section class="section bg-light" id="contatto">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Richiedi informazioni</span>
+                <h2>Inviaci un messaggio</h2>
+                <p>Compila il form e ti risponderemo il prima possibile. Tutti i campi sono obbligatori.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
+                <!-- Form Contatto -->
+                <div>
+                    <form class="contact-form" action="#" method="POST">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                            <div>
+                                <label for="nome" style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--text-dark);">Nome *</label>
+                                <input type="text" id="nome" name="nome" required style="width: 100%; padding: 1rem; border: 2px solid var(--border-color); border-radius: 8px; font-size: 1rem; transition: var(--transition-normal);">
+                            </div>
+                            <div>
+                                <label for="cognome" style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--text-dark);">Cognome *</label>
+                                <input type="text" id="cognome" name="cognome" required style="width: 100%; padding: 1rem; border: 2px solid var(--border-color); border-radius: 8px; font-size: 1rem; transition: var(--transition-normal);">
+                            </div>
+                        </div>
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                            <div>
+                                <label for="email" style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--text-dark);">Email *</label>
+                                <input type="email" id="email" name="email" required style="width: 100%; padding: 1rem; border: 2px solid var(--border-color); border-radius: 8px; font-size: 1rem; transition: var(--transition-normal);">
+                            </div>
+                            <div>
+                                <label for="telefono" style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--text-dark);">Telefono *</label>
+                                <input type="tel" id="telefono" name="telefono" required style="width: 100%; padding: 1rem; border: 2px solid var(--border-color); border-radius: 8px; font-size: 1rem; transition: var(--transition-normal);">
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <label for="settore" style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--text-dark);">Settore di Interesse *</label>
+                            <select id="settore" name="settore" required style="width: 100%; padding: 1rem; border: 2px solid var(--border-color); border-radius: 8px; font-size: 1rem; transition: var(--transition-normal); background-color: white;">
+                                <option value="">Seleziona un settore</option>
+                                <option value="edilizia">Edilizia e Arredamento</option>
+                                <option value="industriale">Settore Industriale</option>
+                                <option value="agricolo">Settore Agricolo</option>
+                                <option value="conto-terzi">Lavorazioni Conto Terzi</option>
+                                <option value="forniture">Forniture</option>
+                                <option value="altro">Altro</option>
+                            </select>
+                        </div>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <label for="messaggio" style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--text-dark);">Messaggio *</label>
+                            <textarea id="messaggio" name="messaggio" rows="6" required style="width: 100%; padding: 1rem; border: 2px solid var(--border-color); border-radius: 8px; font-size: 1rem; transition: var(--transition-normal); resize: vertical;"></textarea>
+                        </div>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <label style="display: flex; align-items: start; gap: 0.75rem; cursor: pointer;">
+                                <input type="checkbox" required style="margin-top: 0.25rem;">
+                                <span style="font-size: 0.9rem; color: var(--text-light);">Acconsento al trattamento dei miei dati personali secondo la <a href="#" style="color: var(--primary-color); text-decoration: underline;">Privacy Policy</a> *</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Invia Richiesta</button>
+                    </form>
+                </div>
+
+                <!-- Mappa Google -->
+                <div>
+                    <div style="width: 100%; height: 500px; position: relative;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.1542847769!2d16.920494815443!3d40.79685097932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13477e3c3c3c3d%3A0x3d3c3c3c3c3c3c3c!2sPiazza%20Umberto%20I%2C%2070023%20Gioia%20del%20Colle%20BA!5e0!3m2!1sit!2sit!4v1234567890123!5m2!1sit!2sit"
+                            width="100%"
+                            height="500"
+                            style="border:0; border-radius: 8px;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Domande Frequenti</span>
+                <h2>FAQ</h2>
+                <p>Le risposte alle domande più comuni</p>
+            </div>
+
+            <div style="max-width: 900px; margin: 0 auto;">
+                <div class="features-grid" style="grid-template-columns: 1fr;">
+
+                    <div class="feature-card" style="text-align: left;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Come posso richiedere un preventivo?</h3>
+                        <p>Puoi richiedere un preventivo compilando il form in questa pagina, chiamandoci al numero 080 348 1234 o inviandoci un'email a info@aziendametalmeccanica.it. Ti risponderemo entro 24 ore con una valutazione preliminare.</p>
+                    </div>
+
+                    <div class="feature-card" style="text-align: left;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Quali settori coprite?</h3>
+                        <p>Lavoriamo in 5 settori principali: Edilizia e Arredamento, Settore Industriale, Settore Agricolo, Lavorazioni Conto Terzi e Forniture di Materiali Metallici. Ogni settore ha competenze specializzate.</p>
+                    </div>
+
+                    <div class="feature-card" style="text-align: left;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Quanto tempo ci vuole per realizzare un progetto?</h3>
+                        <p>I tempi dipendono dalla complessità del progetto. Lavori semplici possono essere completati in 1-2 settimane, mentre progetti più complessi richiedono 4-8 settimane. Ti forniremo una stima precisa dopo il sopralluogo.</p>
+                    </div>
+
+                    <div class="feature-card" style="text-align: left;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Effettuate sopralluoghi gratuiti?</h3>
+                        <p>Sì, offriamo sopralluoghi gratuiti entro 50 km dalla nostra sede di Gioia del Colle. Per distanze maggiori, concordiamo le modalità caso per caso.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Non hai trovato quello che cercavi?</h2>
+                <p>Chiamaci direttamente o passa a trovarci in sede. Saremo felici di rispondere a tutte le tue domande.</p>
+                <div class="cta-buttons">
+                <button onclick="window.location.href='tel:+390803481234'" class="btn btn-primary btn-lg">Chiamaci</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <span class="logo-text">AZIENDA</span>
+                        <span class="logo-subtitle">Metalmeccanica</span>
+                    </div>
+                    <p class="footer-tagline">Artigiani 4.0 dal 1968</p>
+                    <p class="footer-address">
+                        Via Esempio, 123<br>
+                        70023 Gioia del Colle (BA)<br>
+                        P.IVA 12345678901
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Link Rapidi</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="azienda.html">Azienda</a></li>
+                        <li><a href="settori.html">Settori</a></li>
+                        <li><a href="case-studies.html">Case of Studies</a></li>
+                        <li><a href="contatti.html">Contatti</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Informazioni Legali</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="privacy.html#cookie">Cookie Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contatti</h4>
+                    <ul class="footer-contacts">
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <a href="tel:+390803481234">080 348 1234</a>
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <a href="mailto:info@aziendametalmeccanica.it">info@aziendametalmeccanica.it</a>
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                            <a href="https://wa.me/393471234567" target="_blank">WhatsApp</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Azienda Metalmeccanica. Tutti i diritti riservati.</p>
+                <p>Developed by <a href="https://glaselva.github.io/portfolio/" target="_blank" style="color: #00848A;">Giuseppe La Selva</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

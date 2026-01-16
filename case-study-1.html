@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Case Study: Scala di Design per Villa Moderna - Progettazione e realizzazione scala interna in acciaio e vetro.">
+    <title>Scala di Design per Villa Moderna | Case Study</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <span class="logo-text">AZIENDA</span>
+                    <span class="logo-subtitle">Metalmeccanica</span>
+                </a>
+            </div>
+
+            <div class="nav-center">
+                <div class="nav-menu" id="navMenu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="azienda.html" class="nav-link">Azienda</a>
+                    <a href="settori.html" class="nav-link">Settori</a>
+                    <a href="case-studies.html" class="nav-link active">Case Study</a>
+                    <a href="contatti.html" class="nav-link">Contatti</a>
+                </div>
+            </div>
+
+            <div class="nav-right">
+                <div class="nav-contacts">
+                    <a href="tel:+390803481234" class="nav-contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <span class="contact-text">080 348 1234</span>
+                    </a>
+                    <a href="https://wa.me/393471234567" target="_blank" class="nav-contact-item whatsapp">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        <span class="contact-text">WhatsApp</span>
+                    </a>
+                    <a href="https://www.linkedin.com/company/azienda-metalmeccanica" target="_blank" class="nav-contact-item linkedin">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        <span class="contact-text">LinkedIn</span>
+                    </a>
+                </div>
+                <a href="contatti.html" class="btn btn-primary nav-cta">Richiedi Preventivo</a>
+            </div>
+
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" style="background-image: url('img/caseofstudies/case1.jpg')">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <a href="case-studies.html">Case Study</a>
+                <span>/</span>
+                <span>Scala di Design per Villa Moderna</span>
+            </div>
+            <h1>Scala di Design per Villa Moderna</h1>
+            <p class="hero-lead">Progettazione e realizzazione di una scala interna in acciaio verniciato con gradini in vetro stratificato per una villa di nuova costruzione. Design minimalista e massima sicurezza.</p>
+        </div>
+    </section>
+
+    <!-- Info Progetto -->
+    <section class="section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-label">Cliente</div>
+                    <div class="stat-number">Privato</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">Settore</div>
+                    <div class="stat-number">Edilizia</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">Durata</div>
+                    <div class="stat-number">3 sett.</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">Budget</div>
+                    <div class="stat-number">€15.000</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Panoramica Progetto -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Panoramica</span>
+                <h2>Il Progetto</h2>
+            </div>
+
+            <div class="content-wrapper">
+                <p>
+                    Una giovane coppia di professionisti ci ha contattati per realizzare la scala principale della loro nuova villa. Il progetto architettonico prevedeva uno spazio living a doppia altezza, e desideravano una scala che fosse sia funzionale che un elemento di design caratterizzante.
+                </p>
+                <p>
+                    La richiesta era chiara: una scala minimalista, moderna, che sembrasse "sospesa" nello spazio, con materiali di alta qualità e massima attenzione alla sicurezza, considerando la presenza di bambini piccoli in famiglia.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- La Sfida -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">La Sfida</span>
+                <h2>Obiettivi e Vincoli</h2>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <h3>Design Minimalista</h3>
+                    <p>Creare una struttura visivamente leggera che si integrasse perfettamente con lo stile contemporaneo dell'abitazione, senza rinunciare alla solidità strutturale.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3>Massima Sicurezza</h3>
+                    <p>Garantire la massima sicurezza per i bambini piccoli con parapetti a norma, vetri stratificati anti-sfondamento e struttura certificata.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Tempi Stretti</h3>
+                    <p>Il cantiere edile aveva tempi serrati: dovevamo completare l'installazione in 3 settimane, coordinandoci con gli altri artigiani presenti.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soluzione -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">La Nostra Soluzione</span>
+                <h2>Progettazione e Realizzazione</h2>
+            </div>
+
+            <div class="content-wrapper">
+                <h3>Fase di Progettazione</h3>
+                <p>
+                    Abbiamo iniziato con un sopralluogo dettagliato e rilievi precisi dello spazio. In collaborazione con l'architetto del progetto, abbiamo sviluppato un modello 3D della scala per verificare ingombri, ergonomia e impatto visivo.
+                </p>
+                <p>
+                    La soluzione tecnica prevedeva una struttura portante in acciaio verniciato RAL 9005 (nero opaco) con gradini in vetro stratificato temperato 10+10mm. I montanti verticali sono stati ridotti al minimo per creare l'effetto "sospeso" richiesto.
+                </p>
+
+                <h3>Materiali Utilizzati</h3>
+                <ul>
+                    <li>
+                        <strong>Struttura portante:</strong> Profili in acciaio S355 verniciato a polvere RAL 9005
+                    </li>
+                    <li>
+                        <strong>Gradini:</strong> Vetro stratificato temperato 10+10mm con pellicola anti-sfondamento
+                    </li>
+                    <li>
+                        <strong>Parapetto:</strong> Profili in acciaio con pannelli in vetro temperato 8mm
+                    </li>
+                    <li>
+                        <strong>Finiture:</strong> Corrimano in acciaio spazzolato con trattamento anti-impronta
+                    </li>
+                </ul>
+
+                <h3>Installazione</h3>
+                <p>
+                    L'installazione è avvenuta in cantiere in soli 4 giorni lavorativi. Abbiamo prefabbricato l'intera struttura in officina con tolleranze millimetriche, permettendo un montaggio rapido e preciso. Ogni elemento è stato numerato e assemblato seguendo uno schema preciso.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Risultati -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Risultati</span>
+                <h2>Obiettivi Raggiunti</h2>
+            </div>
+
+    <div class="features-grid">
+        <div class="feature-card">
+            <div class="feature-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+            </div>
+            <h3>Consegna nei Tempi</h3>
+            <p>Progetto completato in 21 giorni, rispettando perfettamente la tabella di marcia del cantiere e le aspettative del cliente.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+            </div>
+            <h3>Certificazioni</h3>
+            <p>Tutti i materiali certificati, calcoli strutturali validati da ingegnere e conformità totale alle normative di sicurezza vigenti.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+            </div>
+            <h3>Cliente Soddisfatto</h3>
+            <p>La scala è diventata l'elemento architettonico distintivo della villa. Il cliente ha rilasciato una recensione a 5 stelle.</p>
+        </div>
+    </div>
+        </div>
+    </section>
+
+    <!-- Testimonianza -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="testimonial">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path>
+                    <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path>
+                </svg>
+                <blockquote>
+                    "La scala ha superato ogni nostra aspettativa. È esattamente quello che avevamo immaginato: moderna, elegante e sicura. Il team ha lavorato con professionalità e precisione, rispettando tempi e budget. Consigliatissimi!"
+                </blockquote>
+                <div class="testimonial-author">— Marco R.</div>
+                <div class="testimonial-role">Committente Privato</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progetti Correlati -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Altri Case Study</h2>
+                <p>Scopri altri progetti che abbiamo realizzato</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="3" y1="9" x2="21" y2="9"></line>
+                            <line x1="9" y1="21" x2="9" y2="9"></line>
+                        </svg>
+                    </div>
+                    <h3>Pergola Bioclimatica</h3>
+                    <p>Struttura motorizzata per ristorante con lamelle orientabili e illuminazione LED integrata.</p>
+                    <a href="case-study-5.html" class="btn btn-primary">Scopri di più</a>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M12 1v6m0 6v6M5.6 5.6l4.2 4.2m4.2 4.2l4.2 4.2M1 12h6m6 0h6M5.6 18.4l4.2-4.2m4.2-4.2l4.2-4.2"></path>
+                        </svg>
+                    </div>
+                    <h3>Carpenteria Industriale</h3>
+                    <p>Struttura portante per capannone industriale di 2000 mq con certificazioni complete.</p>
+                    <a href="case-study-2.html" class="btn btn-primary">Scopri di più</a>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3>Prototipazione Design</h3>
+                    <p>Realizzazione di 50 pezzi unici per linea arredamento con taglio laser di precisione.</p>
+                    <a href="case-study-4.html" class="btn btn-primary">Scopri di più</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Hai un progetto simile?</h2>
+                <p>Contattaci per discutere del tuo progetto. Saremo felici di trasformare la tua idea in realtà con la stessa dedizione e qualità.</p>
+                <a href="contatti.html" class="btn btn-white btn-lg">Richiedi un Preventivo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <span class="logo-text">AZIENDA</span>
+                        <span class="logo-subtitle">Metalmeccanica</span>
+                    </div>
+                    <p class="footer-tagline">Artigiani 4.0 dal 1968</p>
+                    <p class="footer-address">
+                        Via Esempio, 123<br>
+                        70023 Gioia del Colle (BA)<br>
+                        P.IVA 12345678901
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Link Rapidi</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="azienda.html">Azienda</a></li>
+                        <li><a href="settori.html">Settori</a></li>
+                        <li><a href="case-studies.html">Case Study</a></li>
+                        <li><a href="contatti.html">Contatti</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Informazioni Legali</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="privacy.html#cookie">Cookie Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contatti</h4>
+                    <ul class="footer-contacts">
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <a href="tel:+390803481234">080 348 1234</a>
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <a href="mailto:info@aziendametalmeccanica.it">info@aziendametalmeccanica.it</a>
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                            <a href="https://wa.me/393471234567" target="_blank">WhatsApp</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Azienda Metalmeccanica. Tutti i diritti riservati.</p>
+                <p>Developed by <a href="#" style="color: #00848A;">TableHero</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

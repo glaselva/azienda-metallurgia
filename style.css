@@ -1,5 +1,5 @@
 /* ==========================================
-   AZIENDA METALMECCANICA - STYLES
+   AZIENDAN METALMECCANICA - STYLES
    Responsive Design - Mobile First
    ========================================== */
 
@@ -649,11 +649,44 @@ p {
 .settore-content h3 {
     color: var(--secondary-color);
     margin-bottom: 1rem;
+    font-size: 1rem;
 }
 
 .settore-content p {
     color: var(--text-light);
     font-size: 0.95rem;
+}
+
+/* Show buttons in content */
+.settore-content .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Mobile: Show button in content instead of overlay */
+@media (max-width: 768px) {
+    .settore-overlay {
+        display: none;
+    }
+
+    .settore-content {
+        padding: 1.5rem;
+    }
+
+    .settore-content::after {
+        content: '';
+        display: block;
+        margin-top: 1rem;
+    }
+
+    .settore-content .btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+    }
 }
 
 /* === PROCESSO TIMELINE === */
@@ -959,6 +992,88 @@ p {
 .case-link:hover {
     color: var(--primary-dark);
     gap: 0.75rem;
+}
+
+/* === CASE STUDY STYLES === */
+.content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.testimonial {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonial svg {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.testimonial blockquote {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: var(--text-dark);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.testimonial-author {
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.testimonial-role {
+    color: var(--text-light);
+    margin-top: 0.5rem;
+}
+
+/* === CLIENTI === */
+.clienti {
+    padding: var(--spacing-md) 0;
+    background-color: var(--bg-light);
+}
+
+.clienti-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 2rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.cliente-item {
+    opacity: 0.6;
+    transition: var(--transition-normal);
+}
+
+.cliente-item:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.cliente-item img {
+    max-width: 120px;
+    height: auto;
+    filter: grayscale(100%);
+    transition: var(--transition-normal);
+}
+
+.cliente-item:hover img {
+    filter: grayscale(0%);
 }
 
 /* === CTA SECTION === */
@@ -1483,5 +1598,111 @@ p {
 
     .settori-grid .settore-card:nth-child(5) {
         grid-column: 3 / 4;
+    }
+}
+
+/* Cookie Banner Styles */
+/* Aggiungi questo a style.css */
+
+.cookie-banner {
+    position: fixed;
+    bottom: -200px;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+    z-index: 9999;
+    transition: bottom 0.5s ease;
+}
+
+.cookie-banner.show {
+    bottom: 0;
+}
+
+.cookie-banner-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.cookie-banner-text {
+    flex: 1;
+}
+
+.cookie-banner-text p {
+    margin: 0;
+    color: var(--text-dark);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.cookie-banner-text a {
+    color: var(--primary-color);
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.cookie-banner-buttons {
+    display: flex;
+    gap: 0.75rem;
+    flex-shrink: 0;
+}
+
+.cookie-banner-buttons .btn {
+    white-space: nowrap;
+    padding: 0.6rem 1.25rem;
+    font-size: 0.9rem;
+    min-height: 44px; /* Ensure touch-friendly size */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cookie-banner {
+        padding: 1rem;
+    }
+
+    .cookie-banner-content {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    }
+
+    .cookie-banner-text p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+
+    .cookie-banner-buttons {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .cookie-banner-buttons .btn {
+        flex: 1;
+        padding: 0.75rem 0.5rem;
+        font-size: 0.9rem;
+        min-height: 48px; /* Larger touch targets on mobile */
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .cookie-banner {
+        padding: 0.75rem;
+    }
+
+    .cookie-banner-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .cookie-banner-buttons .btn {
+        width: 100%;
     }
 }

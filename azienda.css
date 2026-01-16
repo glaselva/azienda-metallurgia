@@ -3,73 +3,66 @@
    ========================================== */
 
 /* === HERO AZIENDA === */
-.azienda-hero {
+.hero {
     position: relative;
-    height: 70vh;
+    height: 85vh;
     min-height: 500px;
     max-height: 700px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--secondary-light) 100%);
+    background-image: url('img/aziendahero.jpg'),
+                      linear-gradient(135deg, rgba(44,62,80,0.9) 0%, rgba(52,73,94,0.9) 100%);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
     margin-top: 70px;
-    overflow: hidden;
 }
 
-.azienda-hero .hero-image {
+.hero .hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    background: linear-gradient(135deg, rgba(44,62,80,0.8) 0%, rgba(52,73,94,0.6) 100%);
 }
 
-.azienda-hero .hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.azienda-hero .hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, rgba(44,62,80,0.85) 0%, rgba(0,132,138,0.75) 100%);
-}
-
-.azienda-hero .hero-content {
+.hero .hero-content {
     position: relative;
     z-index: 2;
     text-align: center;
     color: var(--white);
 }
 
-.azienda-hero .hero-label {
+.hero .hero-label {
     display: inline-block;
-    padding: 0.5rem 1.5rem;
-    background-color: rgba(255,255,255,0.2);
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
     color: var(--white);
-    border-radius: 25px;
-    font-size: 0.95rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 1.5rem;
-    backdrop-filter: blur(10px);
-}
-
-.azienda-hero h1 {
-    color: var(--white);
-    font-size: clamp(2.5rem, 6vw, 4rem);
-    margin-bottom: 1rem;
-}
-
-.azienda-hero .hero-subtitle {
-    font-size: 1.5rem;
-    opacity: 0.95;
-    font-weight: 300;
     letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+.hero .hero-title {
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero .hero-subtitle {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    color: rgba(255,255,255,0.9);
+    line-height: 1.8;
 }
 
 /* === CHI SIAMO === */
@@ -93,18 +86,21 @@
 }
 
 .chi-siamo-stats {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
 }
 
 .stat-card {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
-    padding: 2rem;
+    padding: 2rem 1.5rem;
     border-radius: 12px;
     text-align: center;
     box-shadow: var(--shadow-md);
     transition: var(--transition-normal);
+    min-width: 140px;
+    flex: 1;
 }
 
 .stat-card:hover {
@@ -113,17 +109,19 @@
 }
 
 .stat-card .stat-number {
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 700;
     color: var(--white);
     margin-bottom: 0.5rem;
     line-height: 1;
+    display: block;
 }
 
 .stat-card .stat-label {
     color: rgba(255,255,255,0.9);
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 500;
+    display: block;
 }
 
 /* === TIMELINE STORIA === */
@@ -356,7 +354,7 @@
 
 /* === CTA FINAL === */
 .cta-final {
-    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--secondary-light) 100%);
+    background-color: #007176;
     color: var(--white);
 }
 
@@ -387,9 +385,8 @@
 }
 
 /* === RESPONSIVE === */
-
 @media (min-width: 768px) {
-    .azienda-hero {
+    .hero {
         margin-top: 80px;
     }
 
@@ -399,89 +396,13 @@
     }
 
     .chi-siamo-stats {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .timeline::before {
-        left: 30px;
-    }
-
-    .timeline-item {
         grid-template-columns: 1fr;
-        gap: 1rem;
-        padding-left: 60px;
-    }
-
-    .timeline-item:nth-child(even) {
-        direction: ltr;
-    }
-
-    .timeline-year {
-        text-align: left;
-        font-size: 2rem;
-    }
-
-    .timeline-item:nth-child(even) .timeline-year {
-        text-align: left;
-    }
-
-    .timeline-year::after {
-        left: -2.25rem;
-        right: auto;
-    }
-
-    .timeline-item:nth-child(even) .timeline-year::after {
-        left: -2.25rem;
-    }
-
-    .chi-siamo-stats {
-        grid-template-columns: 1fr;
-    }
-
-    .stat-card .stat-number {
-        font-size: 2.5rem;
-    }
-
-    .fornitori-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 480px) {
-    .azienda-hero .hero-subtitle {
-        font-size: 1.2rem;
-    }
-
-    .valori-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .stat-card {
-        padding: 1.5rem;
-    }
-
-    .timeline-content {
-        padding: 1.5rem;
-    }
-
-    .cta-buttons {
-        flex-direction: column;
-    }
-
-    .btn-lg {
-        width: 100%;
     }
 }
 
 @media (min-width: 1024px) {
-    .valori-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
     .chi-siamo-stats {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
     }
 }
