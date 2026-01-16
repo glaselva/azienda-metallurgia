@@ -8,18 +8,18 @@ const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('navMenu');
 const navCenter = document.querySelector('.nav-center');
 
-// Sticky navbar on scroll
+// Forza navbar solida all'avvio su tutte le pagine
+window.addEventListener('DOMContentLoaded', () => {
+  navbar.classList.add('scrolled');
+});
+
+// Sticky navbar on scroll - mantieni sempre scrolled
 let lastScroll = 0;
 window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-
-    if (currentScroll > 100) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
-
-    lastScroll = currentScroll;
+  const currentScroll = window.pageYOffset;
+  // Navbar sempre solida
+  navbar.classList.add('scrolled');
+  lastScroll = currentScroll;
 });
 
 // Mobile menu toggle
