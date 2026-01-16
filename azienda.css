@@ -2,6 +2,13 @@
    PAGINA AZIENDA - STYLES
    ========================================== */
 
+/* === CONTAINER === */
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 100%;
+}
+
 /* === HERO AZIENDA === */
 .hero {
     position: relative;
@@ -222,8 +229,8 @@
 /* === VALORI === */
 .valori-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
 }
 
 .valore-card {
@@ -275,8 +282,8 @@
 /* === FORNITORI === */
 .fornitori-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
 }
 
 .fornitore-card {
@@ -398,6 +405,11 @@
     .chi-siamo-stats {
         grid-template-columns: 1fr;
     }
+
+    .fornitori-grid {
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        gap: 3rem;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -405,4 +417,71 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
     }
+}
+
+@media (max-width: 767px) {
+  /* Hero responsive */
+  .hero {
+    margin-top: 60px;
+    height: 70vh;
+    min-height: 400px;
+  }
+
+  .hero-content {
+    padding: 0 1rem;
+  }
+
+  /* Timeline mobile */
+  .timeline-item {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-year {
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  .timeline-year::after {
+    left: -1rem;
+    right: auto;
+  }
+
+  /* Stats cards responsive */
+  .chi-siamo-stats {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .stat-card {
+    min-width: unset;
+    width: 100%;
+  }
+
+  /* Grid gaps */
+  .valori-grid,
+  .fornitori-grid {
+    gap: 1rem;
+  }
+
+  .chi-siamo-grid {
+    gap: 1.5rem;
+  }
+
+  /* Container responsive */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 100%;
+  }
+
+  /* Section padding */
+  section {
+    padding: 2rem 1rem;
+  }
 }
