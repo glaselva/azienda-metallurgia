@@ -402,6 +402,23 @@ p {
         .nav-cta {
             display: none;
         }
+
+        /* Make navbar more compact on small mobile screens */
+        .nav-container {
+            padding: 0.75rem var(--spacing-sm);
+        }
+
+        .logo-text {
+            font-size: 1.25rem;
+        }
+
+        .logo-subtitle {
+            font-size: 0.65rem;
+        }
+
+        .nav-contact-item {
+            font-size: 0.85rem;
+        }
     }
 }
 
