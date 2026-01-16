@@ -419,6 +419,11 @@ p {
         .nav-contact-item {
             font-size: 0.85rem;
         }
+
+        /* Reduce hero margin-top since navbar is now smaller */
+        .hero {
+            margin-top: 50px;
+        }
     }
 }
 
