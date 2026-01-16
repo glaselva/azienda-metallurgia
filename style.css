@@ -182,7 +182,8 @@ p {
 }
 
 .navbar.scrolled {
-    /* Shadow removed */
+    /* Ensure no height changes on scroll */
+    height: auto;
 }
 
 .nav-container {
@@ -405,24 +406,24 @@ p {
 
         /* Make navbar more compact on small mobile screens */
         .nav-container {
-            padding: 0.75rem var(--spacing-sm);
+            padding: 0.5rem var(--spacing-sm);
         }
 
         .logo-text {
-            font-size: 1.25rem;
+            font-size: 1.1rem;
         }
 
         .logo-subtitle {
-            font-size: 0.65rem;
+            font-size: 0.6rem;
         }
 
         .nav-contact-item {
-            font-size: 0.85rem;
+            font-size: 0.8rem;
         }
 
         /* Reduce hero margin-top since navbar is now smaller */
         .hero {
-            margin-top: 50px;
+            margin-top: 40px;
         }
     }
 }
