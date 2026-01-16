@@ -396,6 +396,13 @@ p {
         font-size: 1.1rem;
         padding: 0.75rem 0;
     }
+
+    /* Hide "Richiedi Preventivo" button on mobile */
+    @media (max-width: 768px) {
+        .nav-cta {
+            display: none;
+        }
+    }
 }
 
 /* Tablet */
